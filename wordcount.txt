@@ -1,0 +1,45 @@
+The definition of a program at its most basic is a sequence of Python statements
+that have been crafted to do something. Even our simple hello.py script is a
+program. It is a one-line program and is not particularly useful, but in the strictest
+definition, it is a Python program.
+It might be easiest to understand what a program is by thinking about a problem
+that a program might be built to solve, and then looking at a program that would
+solve that problem.
+Lets say you are doing Social Computing research on Facebook posts and you are
+interested in the most frequently used word in a series of posts. You could print out
+the stream of Facebook posts and pore over the text looking for the most common
+word, but that would take a long time and be very mistake prone. You would be
+smart to write a Python program to handle the task quickly and accurately so you
+can spend the weekend doing something fun.
+For example, look at the following text about a clown and a car. Look at the text
+and figure out the most common word and how many times it occurs.
+effectively
+manage their complexity. Most humans have a difficult time keeping track of too many pieces of
+information at one time. It is easy to become bogged down in the details of a complex problem. The trick
+to managing complexity is to break down the problem into more manageable pieces. Each piece has its
+own details that must be addressed, but these details are hidden as much as possible within that piece. The
+problem ultimately is solved by putting these pieces together to form the complete solution.
+So far all of the code we have written has been placed within a single block of code. That single
+block may have contained sub-blocks for the bodies of structured statements like if and while, but the
+program¡¦s execution begins with the first statement in the block and ends when the last statement in that
+block is finished. Even though all of the code we have written has been limited to one, sometimes big,
+block, our programs all have executed code outside of that block. All the functions we have used¡Xprint,
+input, range, sqrt, random, etc.¡Xrepresent blocks of code that some other programmers have written for
+us. These blocks of code have a structure that makes them reusable by any Python program.
+As the number of statements within our block of code increases, the code can become unwieldy. A
+single block of code (like in all our programs to this point) that does all the work itself is called monolithic
+code. Monolithic code that is long and complex is undesirable for several reasons:
+¡E It is difficult to write correctly. All the details in the entire piece of code must be considered when
+writing any statement within that code.
+¡E It is difficult to debug. If the sequence of code does not work correctly, it is often difficult to find
+the source of the error. The effects of an erroneous statement that appears earlier in the code may not
+become apparent until a correct statement later uses the erroneous statement¡¦s incorrect result.
+¡E It is difficult to extend. All the details in the entire sequence of code must be well understood before
+it can be modified. If the code is complex, this may be a formidable task.
+We can write our own functions to divide our code into more manageable pieces. Using a divide and
+conquer strategy, a programmer can decompose a complicated block of code into several simpler functions.
+The original code then can do its job by delegating the work to these functions. Besides their code organization
+aspects, functions allow us to bundle functionality into reusable parts. In Chapter 6 we saw how
+library functions can dramatically increase the capabilities of our programs. While we should capitalize on
+library functions as much as possible, sometimes we need a function exhibiting custom behavior that is not
+provided by any standard function. Fortunately, we can create our own functions, and the same function
